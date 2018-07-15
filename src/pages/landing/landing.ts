@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { SignupPage } from '../signup/signup';
+
 /**
  * Generated class for the LandingPage page.
  *
@@ -19,7 +21,19 @@ export class LandingPage {
   }
 
   ionViewDidLoad() {
+    
     console.log('ionViewDidLoad LandingPage');
   }
 
+  emailLogin(): void {
+    this.navCtrl.setRoot(SignupPage);
+  }
+
+  facebookLogin(){
+
+  }
+
+  googleLogin(){
+
+  }
 }
