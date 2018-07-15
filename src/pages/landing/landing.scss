@@ -1,16 +1,23 @@
 page-landing {
-    .landing{
+    
+    .landing {
     background-image: url('../assets/imgs/daniel-von-appen-262804-unsplash.jpg');
     background-color: transparent;
     background-repeat: no-repeat;
     background-size:cover;
     }
-    
-    
+
+    .layer {
+        background-color: blue !important;
+        z-index: -1;
+    }
+
+
     .MainButtons button{
         margin-top: 9px;
         margin-bottom: 9px;
     }
+
 
 
 }
