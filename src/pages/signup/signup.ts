@@ -34,7 +34,7 @@ export class SignupPage {
     }else {
     this.isenabled = false;
     }
-    alert($event.checked)
+  
   }
 
   createAccount(): void {

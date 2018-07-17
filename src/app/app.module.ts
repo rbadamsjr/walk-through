@@ -8,9 +8,12 @@ import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { LandingPage } from '../pages/landing/landing';
 import { SignupPage } from '../pages/signup/signup';
+import { ProfilePage } from '../pages/profile/profile';
+import { PlanbuilderPage } from '../pages/planbuilder/planbuilder';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     LandingPage,
     SignupPage,
+    ProfilePage,
+    PlanbuilderPage,
     ListPage
   ],
   imports: [
@@ -32,11 +37,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     LandingPage,
     SignupPage,
+    ProfilePage,
+    PlanbuilderPage,
     ListPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

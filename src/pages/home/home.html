@@ -3,11 +3,20 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>
+        <ion-icon name="clipboard" size="small"></ion-icon>
+      Clipboard..
+    </ion-title>
+    <ion-buttons end>
+    <button ion-button>
+        <ion-icon name="list"></ion-icon>
+      </button>
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <!--
   <h3>Main Page</h3>
 
   <p>
@@ -15,4 +24,34 @@
   </p>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
+-->
+
+<ion-card>
+    <img src="img/advance-card-bttf.png">
+
+    <ion-card-content>
+      <p> Welcome to Clipboard!</p>
+    </ion-card-content>
+
+    <ion-row>
+        <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12 Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>4 Comments</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+    
+</ion-card>
 </ion-content>
