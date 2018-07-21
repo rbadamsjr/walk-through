@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Alert } from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the PlanbuilderPage page.
  *
@@ -25,5 +25,9 @@ export class PlanbuilderPage {
 
   skip() {
     alert('Skip!');
+  }
+
+  cancel() {
+    this.navCtrl.setRoot(HomePage);
   }
 }

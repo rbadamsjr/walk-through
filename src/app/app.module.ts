@@ -4,7 +4,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { LandingPage } from '../pages/landing/landing';
 import { SignupPage } from '../pages/signup/signup';
@@ -23,8 +22,7 @@ import { Camera } from '@ionic-native/camera';
     LandingPage,
     SignupPage,
     ProfilePage,
-    PlanbuilderPage,
-    ListPage
+    PlanbuilderPage
   ],
   imports: [
     BrowserModule,
@@ -38,8 +36,7 @@ import { Camera } from '@ionic-native/camera';
     LandingPage,
     SignupPage,
     ProfilePage,
-    PlanbuilderPage,
-    ListPage
+    PlanbuilderPage
   ],
   providers: [
     StatusBar,
